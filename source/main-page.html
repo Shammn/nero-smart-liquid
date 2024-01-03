@@ -82,7 +82,7 @@
         <div class="page__content-container">
           <h1 class="visually-hidden">NERO Smart Liquid</h1>
           <div class="hero-block__container">
-            <p class="hero-block__text">Новая формула <span>жидкости</span> от нейросети</p>
+            <p class="hero-block__title title">Новая формула <span>жидкости</span> от нейросети</p>
             <picture>
               <img class="hero-block__image" src="img/main-page/raspberry-flavor.png" width="261" height="248" alt="NERO Smart Liquid вкус малины.">
             </picture>
@@ -257,6 +257,35 @@
           </div>
         </div>
       </section>
+      <section class="feedback">
+        <div class="page__content-container">
+          <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="visually-hidden">Форма для связи</h2>
+            <p class="form__title title">Оставьте контакты, мы <span>оперативно<span> свяжемся с вами!</p>
+            <div class="form__container">
+              <label class="visually-hidden" for="name">Имя</label>
+              <input class="form__field" placeholder="ИМЯ" type="text" name="name" id="name" required>
+              <label class="visually-hidden" for="city">Город</label>
+              <input class="form__field" placeholder="ГОРОД" type="text" name="city" id="city" required>
+              <label class="visually-hidden" for="phone">Телефон</label>
+              <input class="form__field" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="phone" required>
+              <label class="visually-hidden" for="comment">Ваш комментарий</label>
+              <textarea class="form__field" placeholder="ВАШ КОММЕНТАРИЙ (Не обязательно)" name="comment" id="comment"></textarea>
+              <label class="form__personal-data checkbox">
+                <input class="checkbox__input visually-hidden" type="checkbox" name="personal-data" required>
+                <span class="checkbox__mark"></span>
+                <span class="checkbox__label">Я даю согласие на обработку персональных данных согласно условиям политики конфиденциальности</span>
+              </label>
+              <button class="form__button button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="page__content-container">
+
+      </div>
+    </footer>
   </body>
 </html>
