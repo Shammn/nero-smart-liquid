@@ -341,5 +341,25 @@
         </a>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="visually-hidden">Форма для связи</h2>
+          <p class="modal-form__title title">Оставьте контакты, мы свяжемся с вами</p>
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="modal-form__field" placeholder="ИМЯ" type="text" name="name" id="modal-name" required>
+          <label class="visually-hidden" for="city">Город</label>
+          <input class="modal-form__field" placeholder="ГОРОД" type="text" name="city" id="modal-city" required>
+          <label class="visually-hidden" for="phone">Телефон</label>
+          <input class="modal-form__field" placeholder="+7 (999) 999-99-99" type="tel" name="modal-phone" id="phone" required>
+          <label class="visually-hidden" for="comment">Ваш комментарий</label>
+          <textarea class="modal-form__field" placeholder="ВАШ КОММЕНТАРИЙ (Не обязательно)" name="modal-comment" id="comment"></textarea>
+          <button class="modal-form__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>
