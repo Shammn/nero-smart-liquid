@@ -3,3 +3,10 @@
 
 // Базовые стили
 @use "./base/base.scss";
+@use "./base/page.scss";
+@use "./base/logo.scss";
+@use "./base/fonts.scss";
+@use "./base/button.scss";
+
+// Блоки
+@use "./blocks/age-verification.scss";
