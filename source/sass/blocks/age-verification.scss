@@ -1,0 +1,57 @@
+@use "../variables.scss";
+
+.age-verification__wrapper {
+background: url("../../img/age-verification/background.jpg") center center no-repeat;
+background-size: cover;
+}
+
+.age-verification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  max-width: 533px;
+  height: 100vh;
+  margin: auto;
+}
+
+.age-verification__question {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: -0.96px;
+  }
+}
+
+.age-verification__container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 20px;
+  }
+}
+
+.age-verification__description {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.70);
+  letter-spacing: 0.28px;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    letter-spacing: -0.28px;
+  }
+}
