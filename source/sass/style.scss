@@ -7,6 +7,16 @@
 @use "./base/logo.scss";
 @use "./base/fonts.scss";
 @use "./base/button.scss";
+@use "./base/title.scss";
 
 // Блоки
 @use "./blocks/age-verification.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/menu.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/contacts-list.scss";
+@use "./blocks/social.scss";
+@use "./blocks/social-list.scss";
+@use "./blocks/developer-info.scss";
+@use "./blocks/main-navigation.scss";

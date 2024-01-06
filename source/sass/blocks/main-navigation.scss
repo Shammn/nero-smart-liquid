@@ -1,0 +1,8 @@
+@use "./variables.scss";
+
+.main-navigation {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    height: 100%
+  }
+}

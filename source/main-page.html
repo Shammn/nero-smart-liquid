@@ -8,74 +8,78 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="#" class="main-header__logo logo">
-        <picture>
-          <img src="img/logo/logo-header.svg" width ="90" height="30" alt="NERO Smart Liquid">
-        </picture>
-      </a>
-      <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Обзоры</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Контакты</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Дистрибьюторам</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="main-header__contacts contacts">
-        <p class="contacts__title title">Контакты</p>
-        <ul class="contacts__list contacts-list">
-          <li class="contacts-list__item">+7 (000) 000-00-00</li>
-          <li class="contacts-list__item">sales@neroliquid.ru</li>
-        </ul>
-      </section>
-      <section class="main-header__social social">
-        <p class="social__title title">Мы в соцсетях</p>
-        <ul class="social__list social-list">
-          <li class="social-list__item">
-            <a href="" class="social-list__button">
-              <span class="visually-hidden">Telegram</span>
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__button">
-              <span class="visually-hidden">Vkontakte</span>
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__button">
-              <span class="visually-hidden">Instagram</span>
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="main-header__developer-info developer-info">
-        <a href="#" class="developer-info__logo logo">
+      <div class="main-header__container">
+        <a href="#" class="main-header__logo logo">
           <picture>
-            <img src="img/logo/logo-mbc.png" width="76" height="75" alt="Created by MBC Studio.">
+            <img src="img/logo/logo-header.svg" width ="90" height="30" alt="NERO Smart Liquid">
           </picture>
         </a>
-        <p class="developer-info__text">Design by Bozhenov</p>
-      </section>
+        <div class="main-header__menu menu menu--closed menu--nojs">
+          <button class="menu__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+          <div class="menu__wrapper">
+            <nav class="main-header__navigation main-navigation">
+              <ul class="main-navigation__list site-list">
+                <li class="site-list__item">
+                  <a href="#">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#">Обзоры</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#">Дистрибьюторам</a>
+                </li>
+              </ul>
+            </nav>
+            <section class="main-header__contacts contacts">
+              <p class="contacts__title title">Контакты</p>
+              <ul class="contacts__list contacts-list">
+                <li class="contacts-list__item">+7 (000) 000-00-00</li>
+                <li class="contacts-list__item">sales@neroliquid.ru</li>
+              </ul>
+            </section>
+            <section class="main-header__social social">
+              <p class="social__title title">Мы в соцсетях</p>
+              <ul class="social__list social-list">
+                <li class="social-list__item">
+                  <a href="" class="social-list__button">
+                    <span class="visually-hidden">Telegram</span>
+                    <svg width="48" height="48">
+                      <use xlink:href="img/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__button">
+                    <span class="visually-hidden">Vkontakte</span>
+                    <svg width="48" height="48">
+                      <use xlink:href="img/sprite.svg#vkontakte"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__button">
+                    <span class="visually-hidden">Instagram</span>
+                    <svg width="48" height="48">
+                      <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="main-header__developer-info developer-info">
+              <a href="#" class="developer-info__logo logo">
+                <picture>
+                  <img src="img/logo/logo-mbc.png" width="76" height="75" alt="Created by MBC Studio.">
+                </picture>
+              </a>
+              <p class="developer-info__text">Design by<br>Bozhenov</p>
+            </section>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="main-container">
       <section class="hero-block">
@@ -362,5 +366,6 @@
       </div>
     </div>
 
+    <script src="js/script-menu-togle.js"></script>
   </body>
 </html>

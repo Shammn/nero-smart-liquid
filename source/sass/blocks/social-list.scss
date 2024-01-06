@@ -1,0 +1,24 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+.social-list {
+  @include mixins.list-reset;
+  display: flex;
+  gap: 15px;
+
+  @media (max-width: variables.$mobile-width-only) {
+    justify-content: flex-end;
+  }
+}
+
+.social-list__button {
+  display: flex;
+  align-items: center;
+}
+
+.social-list svg {
+  @media (min-width: variables.$tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
