@@ -27,6 +27,8 @@
 
     @media(min-width: variables.$tablet-width) {
       min-width: 198px;
+      font-size: 20px;
+      line-height: 24px;
       padding: 30px 20px;
     }
   }
@@ -40,12 +42,15 @@
 
     @media(min-width: variables.$tablet-width) {
       min-width: 198px;
+      font-size: 20px;
+      line-height: 24px;
       padding: 30px 20px;
     }
   }
 
   @media(min-width: variables.$tablet-width) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
+    padding: 30px 20px;
   }
 }

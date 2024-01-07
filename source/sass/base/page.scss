@@ -1,9 +1,5 @@
 @use "../variables.scss";
 
-.page {
-  //height: 100%;
-}
-
 .page__body {
   display: flex;
   flex-direction: column;
@@ -23,6 +19,7 @@
 }
 
 .page__content-container {
+  position: relative;
   width: 320px;
   padding: 0 20px;
   margin: 0 auto;
