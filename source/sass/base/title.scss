@@ -1,26 +1,8 @@
 @use "../variables.scss";
 
 .title {
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  letter-spacing: -0.48px;
   text-transform: uppercase;
   margin: 0;
-
-  @media (min-width: variables.$tablet-width) {
-    font-size: 48px;
-    line-height: 58px;
-    letter-spacing: -0.96px;
-    text-align: left;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    font-size: 56px;
-    line-height: 67px;
-    font-weight: 600;
-    letter-spacing: -1.12px;
-  }
 }
 
 .title span {

@@ -1,5 +1,23 @@
 //Viewports
-
 $mobile-width-only: 1023px;
 $tablet-width: 1024px;
 $desktop-width: 1440px;
+
+//Colors
+$color-first: rgb(33, 255, 0);
+$color-second: rgb(137, 25, 25);
+$color-third: rgb(234, 227, 19);
+$color-fourth: rgb(250, 218, 3);
+$color-fifth: rgb(60, 173, 19);
+$color-sixth: rgb(123, 145, 30);
+$color-seventh: rgb(255, 76, 31);
+$color-eighth: rgb(251, 49, 29);
+
+// Shadows
+$shadow-first: linear-gradient(90deg, #0CD90C 0%, #14D414 100%);
+$shadow-second: linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+$shadow-third: linear-gradient(90deg, #EBEA13 0%, #C1B815 100%);
+$shadow-fourth: linear-gradient(90deg, #EEC811 0%, #1D971E 100%);
+$shadow-fifth: linear-gradient(90deg, #81FF33 0%, #CDC01D 100%);
+$shadow-sixth: linear-gradient(90deg, #E96A66 0%, #CDC01D 100%);
+$shadow-seventh: linear-gradient(90deg, #E45E5A 0%, #EE3E33 100%);

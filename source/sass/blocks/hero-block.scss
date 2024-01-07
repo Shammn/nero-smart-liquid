@@ -14,7 +14,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    background: url("../../img/age-verification/background.jpg") 500px -33px no-repeat, radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0.00) 0%, #010101 100%) center center no-repeat;
+    background: url("../../img/age-verification/background.jpg") 100% -33px no-repeat, radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0.00) 0%, #010101 100%) center center no-repeat;
     background-size: contain;
   }
 }
@@ -30,10 +30,25 @@
 }
 
 .hero-block__title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.48px;
+  text-align: center;
   margin-bottom: 20px;
 
   @media (min-width: variables.$tablet-width) {
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.96px;
+    text-align: left;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 56px;
+    line-height: 67px;
+    letter-spacing: -1.12px;
+    font-weight: 600;
   }
 }
 
