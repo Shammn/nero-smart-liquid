@@ -1,0 +1,9 @@
+@use "../variables.scss";
+
+.achievments {
+  padding-bottom: 64px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 121px;
+  }
+}

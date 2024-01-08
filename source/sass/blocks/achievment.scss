@@ -1,0 +1,59 @@
+@use "../variables.scss";
+
+.achievment {
+  display: flex;
+  align-items: center;
+  width: 169px;
+  padding-top: 90px;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  &--flavor {
+    background-image: url("../../img/main-page/achievment/flavor.svg");
+
+  }
+
+  &--strength {
+    background-image: url("../../img/main-page/achievment/strength.svg");
+  }
+
+  &--development {
+    background-image: url("../../img/main-page/achievment/development.svg");
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    width: 300px;
+    min-height: 70px;
+    padding-top: 0;
+    padding-left: 90px;
+    background-position: left center;
+  }
+}
+
+.achievment__number {
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -0.72px;
+  margin-right: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 48px;
+    line-height: 57px;
+    letter-spacing: -0.4px;
+  }
+}
+
+.achievment__description {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+  }
+}
