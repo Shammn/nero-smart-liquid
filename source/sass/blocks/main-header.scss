@@ -1,7 +1,7 @@
 @use "../variables.scss";
 
 .main-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   min-height: 50px;

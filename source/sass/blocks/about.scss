@@ -1,0 +1,118 @@
+@use "../variables.scss";
+
+.about {
+  padding-bottom: 65px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 121px;
+  }
+}
+
+.about__main-container {
+  @media (min-width: variables.$tablet-width) {
+    padding-right: 492px;
+    background: url("../../img/main-page/about/background.png") right center no-repeat;
+  }
+}
+
+.about__title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.48px;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.64px;
+    text-align: left;
+    margin-bottom: 80px;
+  }
+}
+
+.about__logo {
+  margin: 0 auto;
+  margin-bottom: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 160px;
+    height: 52px;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.about__wrapper {
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.about__description {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: center;
+  opacity: .8;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 19px;
+    line-height: 23px;
+    text-align: left;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about__container {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.about__container p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FF512F 0%, #DD2476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: normal;
+    margin-bottom: 0;
+  }
+}
+
+.about__social .social-list {
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__social svg {
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
