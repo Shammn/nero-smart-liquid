@@ -1,0 +1,21 @@
+@use "../variables.scss";
+
+.feedback {
+  padding-bottom: 64px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 132px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 114px;
+  }
+}
+
+.feedback .page__content-container {
+  @media (min-width: variables.$desktop-width) {
+    width: 1840px;
+  }
+}
+
+

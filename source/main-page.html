@@ -283,22 +283,30 @@
         <div class="page__content-container">
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
             <h2 class="visually-hidden">Форма для связи</h2>
-            <p class="form__title title">Оставьте контакты, мы <span>оперативно<span> свяжемся с вами!</p>
+            <p class="form__title title">Оставьте контакты, мы <span>оперативно</span> свяжемся с вами!</p>
             <div class="form__container">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input class="form__field" placeholder="ИМЯ" type="text" name="name" id="name" required>
-              <label class="visually-hidden" for="city">Город</label>
-              <input class="form__field" placeholder="ГОРОД" type="text" name="city" id="city" required>
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input class="form__field" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="phone" required>
-              <label class="visually-hidden" for="comment">Ваш комментарий</label>
-              <textarea class="form__field" placeholder="ВАШ КОММЕНТАРИЙ (Не обязательно)" name="comment" id="comment"></textarea>
-              <label class="form__personal-data checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="personal-data" required>
-                <span class="checkbox__mark"></span>
-                <span class="checkbox__label">Я даю согласие на обработку персональных данных согласно условиям политики конфиденциальности</span>
-              </label>
-              <button class="form__button button" type="submit">Отправить</button>
+              <div class="form__wrapper">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input class="form__field" placeholder="ИМЯ" type="text" name="name" id="name" required>
+                <label class="visually-hidden" for="city">Город</label>
+                <input class="form__field" placeholder="ГОРОД" type="text" name="city" id="city" required>
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input class="form__field" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="phone" required>
+              </div>
+              <div class="form__wrapper">
+                <label class="visually-hidden" for="comment">Ваш комментарий</label>
+                <textarea class="form__field" placeholder="ВАШ КОММЕНТАРИЙ" name="comment" id="comment"></textarea>
+              </div>
+              <div class="form__wrapper">
+                <label class="form__personal-data checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="personal-data" required>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Я даю согласие на обработку персональных данных согласно условиям политики конфиденциальности</span>
+                </label>
+              </div>
+              <div class="form__wrapper">
+                <button class="form__button button" type="submit">Отправить</button>
+              </div>
             </div>
           </form>
         </div>

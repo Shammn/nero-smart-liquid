@@ -1,6 +1,7 @@
 const swiper = new Swiper('.swiper', {
   grabCursor: true,
   centeredSlides: true,
+  speed: 1000,
   slideActiveClass: 'swiper__item--current',
   breakpoints: {
     320: {

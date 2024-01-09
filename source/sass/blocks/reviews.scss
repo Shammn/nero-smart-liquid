@@ -12,6 +12,12 @@
   }
 }
 
+.reviews .page__content-container {
+  @media (min-width: variables.$desktop-width) {
+    width: 1840px;
+  }
+}
+
 .reviews__title {
   position: relative;
   display: block;

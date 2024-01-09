@@ -1,0 +1,54 @@
+@use "../variables.scss";
+
+.checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 50px;
+  }
+}
+
+.checkbox__mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  transform: translateY(-50%);
+}
+
+.checkbox__label {
+  color:#E0E0E0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.42px;
+  opacity: 0.8;
+
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+  }
+}
+
+.checkbox__input:checked + .checkbox__mark::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 26px;
+  top: 50%;
+  left: calc(50% + 2px);
+  background-image: url("../../img/main-page/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translate(-50%, -50%);
+}
