@@ -13,8 +13,14 @@
 }
 
 .feedback .page__content-container {
+  @media (max-width: variables.$mobile-width-only) {
+    width: 375px;
+    padding: 0 7.5px;
+  }
+
   @media (min-width: variables.$desktop-width) {
-    width: 1840px;
+    width: 1500px;
+    padding: 0 15px
   }
 }
 

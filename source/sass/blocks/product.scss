@@ -21,6 +21,10 @@
   letter-spacing: -0.48px;
   margin-bottom: 50px;
 
+  @media (max-width: variables.$mobile-width-only) {
+    margin-right: -29px;
+  }
+
   @media (min-width: variables.$tablet-width) {
     font-size: 32px;
     line-height: 38px;

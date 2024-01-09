@@ -1,11 +1,38 @@
 @use "../variables.scss";
 @use "../mixins.scss";
 
+.contacts {
+  font-size: 16px;
+  line-height: 20px;
+  color: #E0E0E0;
+  text-align: right;
+  letter-spacing: 0.16px;
+
+  &--footer {
+    text-align: center;
+
+    @media (min-width: variables.$tablet-width) {
+      text-align: left;
+    }
+  }
+}
+
 .contacts__title {
   font-size: 16px;
   line-height: 20px;
-  text-align: right;
+  color: #FEFEFE;
   text-transform: uppercase;
   letter-spacing: -0.32px;
   margin-bottom: 10px;
+}
+
+.contacts__list {
+  @include mixins.list-reset;
+}
+
+.contacts__list-item {
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
 }

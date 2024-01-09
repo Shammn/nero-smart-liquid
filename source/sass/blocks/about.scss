@@ -50,6 +50,11 @@
 .about__wrapper {
   margin-bottom: 24px;
 
+  @media (max-width: variables.$mobile-width-only) {
+    margin: 0 auto 24px auto;
+    width: 187px;
+  }
+
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 80px;
   }

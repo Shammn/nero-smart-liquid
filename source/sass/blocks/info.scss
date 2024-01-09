@@ -1,0 +1,29 @@
+@use "../variables.scss";
+
+.info {
+  font-size: 16px;
+  line-height: 20px;
+  color: #FEFEFE;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    text-align: left;
+  }
+}
+
+.info__title {
+  letter-spacing: -0.32px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.info__link {
+  display: block;
+  color: #FEFEFE;
+  letter-spacing: 0.16px;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}

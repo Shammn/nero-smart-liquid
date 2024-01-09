@@ -13,11 +13,8 @@
 @use "./blocks/age-verification.scss";
 @use "./blocks/main-header.scss";
 @use "./blocks/menu.scss";
-@use "./blocks/site-list.scss";
 @use "./blocks/contacts.scss";
-@use "./blocks/contacts-list.scss";
 @use "./blocks/social.scss";
-@use "./blocks/social-list.scss";
 @use "./blocks/developer-info.scss";
 @use "./blocks/main-navigation.scss";
 @use "./blocks/hero-block.scss";
@@ -25,10 +22,11 @@
 @use "./blocks/product-card.scss";
 @use "./blocks/swiper.scss";
 @use "./blocks/achievments.scss";
-@use "./blocks/achievments-list.scss";
 @use "./blocks/achievment.scss";
 @use "./blocks/about.scss";
 @use "./blocks/reviews.scss";
 @use "./blocks/feedback.scss";
 @use "./blocks/form.scss";
 @use "./blocks/checkbox.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/info.scss";

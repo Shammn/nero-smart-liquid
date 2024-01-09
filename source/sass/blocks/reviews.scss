@@ -13,15 +13,21 @@
 }
 
 .reviews .page__content-container {
+  @media (max-width: variables.$mobile-width-only) {
+    width: 370px;
+    padding: 0 25px
+  }
+
   @media (min-width: variables.$desktop-width) {
-    width: 1840px;
+    width: 1500px;
+    padding: 0 15px
   }
 }
 
 .reviews__title {
   position: relative;
   display: block;
-  width: calc(100% - 25px);
+  width: calc(100% - 65px);
   font-size: 23px;
   line-height: 38px;
   letter-spacing: -0.48px;
