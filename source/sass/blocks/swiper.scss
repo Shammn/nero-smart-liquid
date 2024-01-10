@@ -1,31 +1,36 @@
 @use "../variables.scss";
 
-.swiper {
+.product {
   position: relative;
-  overflow: hidden;
-  user-select: none;
 
   &::before {
     content: "";
     position: absolute;
-    top: 135px;
+    top: 166px;
     left: 50%;
     display: block;
     width: 280px;
     height: 168px;
     border-radius: 280px;
-    opacity: 0.5;
-    filter: blur(40px);
+    opacity: 0.75;
     transform: translateX(-50%) rotate(-49.642deg);
+    filter: blur(114px);
     z-index: -1;
     transition: background-image 0.3s;
 
     @media (min-width: variables.$tablet-width) {
-      top: 190px;
+      top: 250px;
       width: 340px;
       height: 220px;
       border-radius: 340px;
-      opacity: 0.3;
+      filter: blur(150px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: 290px;
+      width: 500px;
+      height: 300px;
+      border-radius: 500px;
     }
   }
 
@@ -58,6 +63,11 @@
   }
 }
 
+.swiper {
+  overflow: hidden;
+  user-select: none;
+}
+
 .swiper-horizontal {
     touch-action: pan-y;
 }
@@ -78,7 +88,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    height: 580px;
+    height: 685px;
   }
 }
 
@@ -118,7 +128,8 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    top: 153px;
+    top: 340px;
+    left: 138px;
     transform: translateY(50%);
   }
 
@@ -132,7 +143,7 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: 153px;
+      left: calc(100% - 138px);
       transform: translate(-100%, 50%) rotate(180deg);
     }
   }
