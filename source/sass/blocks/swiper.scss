@@ -98,6 +98,10 @@
 
   &--current {
     @media (min-width: variables.$tablet-width) {
+      transform: scale(1.3);
+    }
+
+    @media (min-width: variables.$desktop-width) {
       transform: scale(1.4);
     }
   }
