@@ -3,7 +3,7 @@
 .hero-block {
   padding-top: 90px;
   padding-bottom: 64px;
-  background: url("../../img/age-verification/background.jpg") -331px 3px no-repeat, radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0.00) 0%, #010101 100%) center center no-repeat;
+  background: url("../../img/age-verification/background.jpg") -372px -16px no-repeat, radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0.00) 0%, #010101 100%) center center no-repeat;
   background-size: 363%;
 
   @media (min-width: variables.$tablet-width) {
@@ -93,4 +93,10 @@
   background: linear-gradient(270deg, #FF512F 50%, #DD2476 115.86%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero-block__button {
+  @media (min-width: variables.$desktop-width) {
+    width: 509px
+  }
 }

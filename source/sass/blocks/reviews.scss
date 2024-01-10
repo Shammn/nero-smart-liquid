@@ -24,10 +24,17 @@
   }
 }
 
+.reviews--soon .page__content-container {
+  &:has(.soon) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .reviews__title {
   position: relative;
   display: block;
-  width: calc(100% - 65px);
+  width: 255px;
   font-size: 23px;
   line-height: 38px;
   letter-spacing: -0.48px;
@@ -64,6 +71,10 @@
   }
 }
 
+.reviews__soon {
+  display: none;
+}
+
 .reviews__container {
   @media (min-width: variables.$tablet-width) {
     display: grid;
@@ -93,6 +104,7 @@
 .review__video {
   width: 100%;
   margin-bottom: 12px;
+  opacity: 0.6;
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 20px;
@@ -111,4 +123,11 @@
     line-height: 32px;
     letter-spacing: -0.48px;
   }
+}
+.reviews--soon .reviews__soon {
+  display: block;
+}
+
+.reviews--soon .reviews__container {
+  display: none;
 }

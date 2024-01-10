@@ -21,7 +21,7 @@
     transition: background-image 0.3s;
 
     @media (min-width: variables.$tablet-width) {
-      top: 70px;
+      top: 190px;
       width: 340px;
       height: 220px;
       border-radius: 340px;
@@ -71,12 +71,26 @@
   margin-bottom: 24px;
 
   @media (min-width: variables.$tablet-width) {
+    display: flex;
+    height: 561px;
+    align-items: center;
     margin-bottom: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 580px;
   }
 }
 
 .swiper__item {
   flex-shrink: 0;
+  transition: .3s;
+
+  &--current {
+    @media (min-width: variables.$tablet-width) {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .swiper__controls {

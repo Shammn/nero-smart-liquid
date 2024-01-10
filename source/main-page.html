@@ -37,7 +37,7 @@
             <section class="main-header__contacts contacts">
               <p class="contacts__title title">Контакты</p>
               <ul class="contacts__list contacts-list">
-                <li class="contacts__list-item">+7 (000) 000-00-00</li>
+                <li class="contacts__list-item">+7 (963) 914-25-95</li>
                 <li class="contacts__list-item">sales@neroliquid.ru</li>
               </ul>
             </section>
@@ -83,7 +83,7 @@
       </div>
     </header>
     <main class="page__main-container">
-      <section class="hero-block">
+      <section id="up" class="hero-block">
         <div class="page__content-container">
           <h1 class="visually-hidden">NERO Smart Liquid</h1>
           <div class="hero-block__container">
@@ -94,7 +94,7 @@
               <img class="hero-block__image" src="img/main-page/raspberry-flavor.png" srcset="img/main-page/raspberry-flavor@2x.png 2x" width="261" height="248" alt="NERO Smart Liquid вкус малины.">
             </picture>
             <p class="hero-block__description"><span>Получи полный спектр эмоций</span> от продукта, в создании которого принимает участие нейросеть</p>
-            <a class="hero-block__button button" href="#">Получить прайс</a>
+            <a class="hero-block__button button button--main" href="#">Получить прайс</a>
           </div>
         </div>
       </section>
@@ -248,9 +248,12 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews reviews--soon">
         <div class="page__content-container">
           <h2 class="reviews__title title"><span>Обзоры</span> продукции</h2>
+          <div class="reviews__soon soon">
+            <p class="soon__text">Совсем скоро...</p>
+          </div>
           <div class="reviews__container">
             <div class="reviews__wrapper review">
               <picture>
@@ -281,21 +284,21 @@
       </section>
       <section class="feedback">
         <div class="page__content-container">
-          <form class="feedback__form form" method="post">
+          <form class="feedback__form form contact-form" method="post">
             <h2 class="visually-hidden">Форма для связи</h2>
             <p class="form__title title">Оставьте контакты, мы <span>оперативно</span> свяжемся с вами!</p>
             <div class="form__container">
               <div class="form__wrapper">
                 <label class="visually-hidden" for="name">Имя</label>
-                <input class="form__field" placeholder="ИМЯ" type="text" name="name" id="name" required>
+                <input class="form__field field field--main" placeholder="ИМЯ" type="text" name="name" id="name" required>
                 <label class="visually-hidden" for="city">Город</label>
-                <input class="form__field" placeholder="ГОРОД" type="text" name="city" id="city" required>
+                <input class="form__field field field--main" placeholder="ГОРОД" type="text" name="city" id="city" required>
                 <label class="visually-hidden" for="phone">Телефон</label>
-                <input class="form__field" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="phone" required>
+                <input class="form__field field field--main" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="phone" required>
               </div>
               <div class="form__wrapper">
                 <label class="visually-hidden" for="comment">Ваш комментарий</label>
-                <textarea class="form__field" placeholder="ВАШ КОММЕНТАРИЙ" name="comment" id="comment"></textarea>
+                <textarea class="form__field field field--main" placeholder="ВАШ КОММЕНТАРИЙ" name="comment" id="comment"></textarea>
               </div>
               <div class="form__wrapper">
                 <label class="form__personal-data checkbox">
@@ -305,7 +308,7 @@
                 </label>
               </div>
               <div class="form__wrapper">
-                <button class="form__button button" type="submit">Отправить</button>
+                <button class="form__button button button--main" type="submit">Отправить</button>
               </div>
             </div>
           </form>
@@ -328,8 +331,8 @@
           <section class="main-footer__contacts contacts contacts--footer">
             <p class="contacts__title title">Контакты</p>
             <ul class="contacts__list contacts-list">
-              <li class="contacts__list-item">+7 (000) 000-00-00</li>
-              <li class="contacts__list-item">nerosmartliquid@email.com</li>
+              <li class="contacts__list-item">+7 (963) 914-25-95</li>
+              <li class="contacts__list-item">sales@neroliquid.ru</li>
             </ul>
           </section>
           <section class="main-footer__social social social--footer">
@@ -362,7 +365,7 @@
             </ul>
           </section>
         </div>
-        <a class="main-footer__button-up" href="#">
+        <a class="main-footer__button-up" href="#up">
           <span class="visually-hidden">Вернуться наверх</span>
           <svg width="48" height="48">
             <use xlink:href="img/sprite.svg#button-up"></use>
@@ -383,19 +386,19 @@
     <div class="modal">
       <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
       <div class="modal__container">
-        <form class="modal__form modal-form" method="post">
+        <form class="modal__form modal-form contact-form" method="post">
           <h2 class="visually-hidden">Форма для связи</h2>
           <p class="modal-form__title title">Оставьте контакты, мы свяжемся с вами</p>
           <div class="modal-form__wrapper">
             <label class="visually-hidden" for="name">Имя</label>
-            <input class="modal-form__field" placeholder="ИМЯ" type="text" name="name" id="modal-name" required>
+            <input class="modal-form__field field field--modal" placeholder="ИМЯ" type="text" name="name" id="modal-name" required>
             <label class="visually-hidden" for="city">Город</label>
-            <input class="modal-form__field" placeholder="ГОРОД" type="text" name="city" id="modal-city" required>
+            <input class="modal-form__field field field--modal" placeholder="ГОРОД" type="text" name="city" id="modal-city" required>
             <label class="visually-hidden" for="phone">Телефон</label>
-            <input class="modal-form__field" placeholder="+7 (999) 999-99-99" type="tel" name="modal-phone" id="phone" required>
+            <input class="modal-form__field field field--modal" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="modal-phone" required>
             <label class="visually-hidden" for="comment">Ваш комментарий</label>
-            <textarea class="modal-form__field" placeholder="ВАШ КОММЕНТАРИЙ" name="modal-comment" id="comment"></textarea>
-            <button class="modal-form__button button" type="submit">Отправить</button>
+            <textarea class="modal-form__field field field--modal" placeholder="ВАШ КОММЕНТАРИЙ" name="modal-comment" id="comment"></textarea>
+            <button class="modal-form__button button button--main" type="submit">Отправить</button>
             <p class="modal-form__personal-data">Нажимая «Отправить», вы подтверждаете обработку персональных данных.</p>
           </div>
         </form>
@@ -405,5 +408,6 @@
     <script src="js/script-menu-togle.js"></script>
     <script src="js/script-swiper.js"></script>
     <script src="js/script-modal-togle.js"></script>
+    <script src="js/script-sending-form.js"></script>
   </body>
 </html>
