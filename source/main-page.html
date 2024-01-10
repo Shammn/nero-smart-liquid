@@ -5,216 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NERO Smart Liquid: Главная страница</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="#" class="main-header__logo logo">
-        <picture>
-          <img src="img/logo/logo-header.svg" width ="90" height="30" alt="NERO Smart Liquid">
-        </picture>
-      </a>
-      <nav class="main-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Обзоры</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Контакты</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Дистрибьюторам</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <section class="main-header__contacts contacts">
-        <p class="contacts__title title">Контакты</p>
-        <ul class="contacts__list contacts-list">
-          <li class="contacts-list__item">+7 (000) 000-00-00</li>
-          <li class="contacts-list__item">sales@neroliquid.ru</li>
-        </ul>
-      </section>
-      <section class="main-header__social social">
-        <p class="social__title title">Мы в соцсетях</p>
-        <ul class="social__list social-list">
-          <li class="social-list__item">
-            <a href="" class="social-list__button">
-              <span class="visually-hidden">Telegram</span>
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__button">
-              <span class="visually-hidden">Vkontakte</span>
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__button">
-              <span class="visually-hidden">Instagram</span>
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="main-header__developer-info developer-info">
-        <a href="#" class="developer-info__logo logo">
+      <div class="main-header__container">
+        <a href="#" class="main-header__logo logo">
           <picture>
-            <img src="img/logo/logo-mbc.png" width="76" height="75" alt="Created by MBC Studio.">
+            <img src="img/logo/logo.svg" width ="90" height="30" alt="NERO Smart Liquid">
           </picture>
         </a>
-        <p class="developer-info__text">Design by Bozhenov</p>
-      </section>
-    </header>
-    <main class="main-container">
-      <section class="hero-block">
-        <div class="page__content-container">
-          <h1 class="visually-hidden">NERO Smart Liquid</h1>
-          <div class="hero-block__container">
-            <p class="hero-block__title title">Новая формула <span>жидкости</span> от нейросети</p>
-            <picture>
-              <img class="hero-block__image" src="img/main-page/raspberry-flavor.png" width="261" height="248" alt="NERO Smart Liquid вкус малины.">
-            </picture>
-            <p class="hero-block__description"><span>Получи полный спектр эмоций</span> от продукта, в создании которого принимает участие нейросеть</p>
-          </div>
-          <a class="hero-block__button button" href="#">Получить прайс</a>
-        </div>
-      </section>
-      <section class="product">
-        <div class="page__content-container">
-          <h2 class="product__title title">Наш продукт</h2>
-          <div class="product__slider slider">
-            <ul class="slider__list">
-              <li class="slider__item slide product-card product-card--first">
-                <picture>
-                  <img class="product-card__image" src="img/main-page/product/apple-flavor.png" width ="240" height="296" alt="NERO Smart Liquid вкус Кислое зеленое яблоко.">
-                </picture>
-                <h3 class="product-card__title">Кислое зеленое яблоко</h3>
-                <p class="product-card__description">Освежающая <span>кислинка</span> и сочная сладость</p>
-                <p class="product-card__type">20 mg | 20 mg strong</p>
-              </li>
-              <li class="slider__item slide product-card product-card--second">
-                <picture>
-                  <img class="product-card__image" src="img/main-page/product/mulled-wine-flavor.png" width ="240" height="296" alt="NERO Smart Liquid вкус Глинтвейн.">
-                </picture>
-                <h3 class="product-card__title">Глинтвейн</h3>
-                <p class="product-card__description">Букет <span>вина</span> с пнряными специями</p>
-                <p class="product-card__type">20 mg | 20 mg strong</p>
-              </li>
-              <li class="slider__item slide product-card product-card--third">
-                <picture>
-                  <img class="product-card__image" src="img/main-page/product/corn-sticks-flavor.png" width ="240" height="296" alt="NERO Smart Liquid вкус Кукурузные палочки.">
-                </picture>
-                <h3 class="product-card__title">Кукурузные палочки</h3>
-                <p class="product-card__description">Хрустящая текстура и <span>сочное впечатление</span></p>
-                <p class="product-card__type">20 mg | 20 mg strong</p>
-              </li>
-              <li class="slider__item slide product-card product-card--fourth">
-                <picture>
-                  <img class="product-card__image" src="img/main-page/product/fruittella-flavor.png" width ="240" height="296" alt="NERO Smart Liquid вкус Фруттелла.">
-                </picture>
-                <h3 class="product-card__title">Фруттелла</h3>
-                <p class="product-card__description">Ароматные фрукты итальянских <span>конфет</span></p>
-                <p class="product-card__type">20 mg | 20 mg strong</p>
-              </li>
-              <li class="slider__item slide product-card product-card--fifth">
-                <picture>
-                  <img class="product-card__image" src="img/main-page/product/frustyle-flavor.png" width ="240" height="296" alt="NERO Smart Liquid вкус Фрустайл.">
-                </picture>
-                <h3 class="product-card__title">Фрустайл</h3>
-                <p class="product-card__description">Экзотика <span>катуса</span> и сладость <span>киви</span></p>
-                <p class="product-card__type">20 mg | 20 mg strong</p>
-              </li>
-              <li class="slider__item slide product-card product-card--sixth">
-                <picture>
-                  <img class="product-card__image" src="img/main-page/product/peach-flavor.png" width ="240" height="296" alt="NERO Smart Liquid вкус Турбо сочный персик.">
-                </picture>
-                <h3 class="product-card__title">Турбо сочный персик</h3>
-                <p class="product-card__description">Вкус жвачки и сладкого <span>персика</span></p>
-                <p class="product-card__type">20 mg | 20 mg strong</p>
-              </li>
-              <li class="slider__item slide product-card product-card--seventh">
-                <picture>
-                  <img class="product-card__image" src="img/main-page/product/garnet-flavor.png" width ="240" height="296" alt="NERO Smart Liquid вкус Гранат.">
-                </picture>
-                <h3 class="product-card__title">Гранат</h3>
-                <p class="product-card__description">Взрыв сочной сладости и кислинки <span>граната</span></p>
-                <p class="product-card__type">20 mg | 20 mg strong</p>
-              </li>
-            </ul>
-            <div class="slider__controls">
-              <button class="slider__button slider__button--prev" type="button"><span class="visually-hidden">Предыдущий слайд</span></button>
-              <button class="slider__button slider__button--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="achievments">
-        <div class="page__content-container">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="achievments__list achievments-list">
-            <li class="achievments-list__item achievment achievment--flavor">
-              <div class="achievment__container">
-                <span class="achievment__number">7</span>
-                <p class="achievment__description">Ярких, насыщенных вкусов</p>
-              </div>
-            </li>
-            <li class="achievments-list__item achievment achievment--strength">
-              <div class="achievment__container">
-                <span class="achievment__number">II</span>
-                <p class="achievment__description">Премиальные линейки крепости</p>
-              </div>
-            </li>
-            <li class="achievments-list__item achievment achievment--development">
-              <div class="achievment__container">
-                <span class="achievment__number">III</span>
-                <p class="achievment__description">Нейронные стадии разработки</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="about">
-        <div class="page__content-container">
-          <h2 class="about__title title">Подробнее о <span>нас</span></h2>
-          <picture>
-            <img class="product-card__image" src="img/logo/logo-about.svg" width ="135" height="45" alt="NERO Smart Liquid">
-          </picture>
-          <p class="about__description">Наша компания представляет собой инновационного лидера в области производства жидкости для электронных сигарет. Сила нашего подхода заключается в уникальном сочетании передовых технологий и искусства создания вкусов, вдохновленных нейросетями.</p>
-          <p class="about__description">Мы используем передовые алгоритмы и аналитику для анализа предпочтений потребителя, что позволяет нам создавать восхитительные жидкости, точно соответствующие желаниям наших клиентов. Наш продукт — это не просто жидкость, а настоящий шедевр, олицетворяющий виртуозное сочетание высокотехнологичной науки.</p>
-          <div class="about__container">
-            <span>Подпишись</span>
-            <div class="about__social social">
-              <ul class="social__list social-list">
-                <li class="social-list__item">
-                  <a href="" class="social-list__button">
+        <div class="main-header__menu menu menu--closed menu--nojs">
+          <button class="menu__toggle" type="button"><span class="visually-hidden">Меню</span></button>
+          <div class="menu__wrapper">
+            <nav class="main-header__navigation main-navigation">
+              <ul class="main-navigation__list">
+                <li class="main-navigation__list-item">
+                  <a href="#">Главная</a>
+                </li>
+                <li class="main-navigation__list-item">
+                  <a href="#">Обзоры</a>
+                </li>
+                <li class="main-navigation__list-item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="main-navigation__list-item">
+                  <a href="#">Дистрибьюторам</a>
+                </li>
+              </ul>
+            </nav>
+            <section class="main-header__contacts contacts">
+              <p class="contacts__title title">Контакты</p>
+              <ul class="contacts__list contacts-list">
+                <li class="contacts__list-item">+7 (963) 914-25-95</li>
+                <li class="contacts__list-item">sales@neroliquid.ru</li>
+              </ul>
+            </section>
+            <section class="main-header__social social">
+              <p class="social__title title">Мы в соцсетях</p>
+              <ul class="social__list">
+                <li class="social__list-item">
+                  <a href="" class="social__list-button">
                     <span class="visually-hidden">Telegram</span>
                     <svg width="48" height="48">
                       <use xlink:href="img/sprite.svg#telegram"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a href="" class="social-list__button">
+                <li class="social__list-item">
+                  <a href="" class="social__list-button">
                     <span class="visually-hidden">Vkontakte</span>
                     <svg width="48" height="48">
                       <use xlink:href="img/sprite.svg#vkontakte"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social-list__item">
-                  <a href="" class="social-list__button">
+                <li class="social__list-item">
+                  <a href="" class="social__list-button">
                     <span class="visually-hidden">Instagram</span>
                     <svg width="48" height="48">
                       <use xlink:href="img/sprite.svg#instagram"></use>
@@ -222,13 +69,191 @@
                   </a>
                 </li>
               </ul>
+            </section>
+            <section class="main-header__developer-info developer-info">
+              <a href="#" class="developer-info__logo logo">
+                <picture>
+                  <img src="img/logo/logo-mbc.png" width="76" height="75" alt="Created by MBC Studio.">
+                </picture>
+              </a>
+              <p class="developer-info__text">Design by<br>Bozhenov</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main-container">
+      <section id="up" class="hero-block">
+        <div class="page__content-container">
+          <h1 class="visually-hidden">NERO Smart Liquid</h1>
+          <div class="hero-block__container">
+            <p class="hero-block__title title">Новая формула <span>жидкости</span> от нейросети</p>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/main-page/raspberry-flavor-desktop.png, img/main-page/raspberry-flavor-desktop@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="img/main-page/raspberry-flavor-tablet.png, img/main-page/raspberry-flavor-tablet@2x.png 2x">
+              <img class="hero-block__image" src="img/main-page/raspberry-flavor.png" srcset="img/main-page/raspberry-flavor@2x.png 2x" width="261" height="248" alt="NERO Smart Liquid вкус малины.">
+            </picture>
+            <p class="hero-block__description"><span>Получи полный спектр эмоций</span> от продукта, в создании которого принимает участие нейросеть</p>
+            <a class="hero-block__button button button--main" href="#">Получить прайс</a>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="page__content-container">
+          <h2 class="product__title title">Наш продукт</h2>
+          <div class="product__swiper swiper">
+            <ul class="product__list swiper-wrapper">
+              <li class="swiper__item swiper-slide product-card product-card--first">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="img/main-page/product/tablet/apple-flavor-tablet.png, img/main-page/product/tablet/apple-flavor-tablet@2x.png 2x">
+                  <img class="product-card__image" src="img/main-page/product/mobile/apple-flavor.png" srcset="img/main-page/product/mobile/apple-flavor@2x.png 2x" width ="240" height="296" alt="NERO Smart Liquid вкус Кислое зеленое яблоко.">
+                </picture>
+                <h3 class="product-card__title">Кислое зеленое яблоко</h3>
+                <p class="product-card__description">Освежающая <span>кислинка</span> и сочная сладость</p>
+                <p class="product-card__type">20 mg | 20 mg strong</p>
+              </li>
+              <li class="swiper__item swiper-slide product-card product-card--second">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="img/main-page/product/tablet/mulled-wine-flavor-tablet.png, img/main-page/product/tablet/mulled-wine-flavor-tablet@2x.png 2x">
+                  <img class="product-card__image" src="img/main-page/product/mobile/mulled-wine-flavor.png" srcset="img/main-page/product/mobile/mulled-wine-flavor@2x.png 2x" width ="240" height="296" alt="NERO Smart Liquid вкус Глинтвейн.">
+                </picture>
+                <h3 class="product-card__title">Глинтвейн</h3>
+                <p class="product-card__description">Букет <span>вина</span> с пнряными специями</p>
+                <p class="product-card__type">20 mg | 20 mg strong</p>
+              </li>
+              <li class="swiper__item swiper-slide product-card product-card--third">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="img/main-page/product/tablet/corn-sticks-flavor-tablet.png, img/main-page/product/tablet/corn-sticks-flavor-tablet@2x.png 2x">
+                  <img class="product-card__image" src="img/main-page/product/mobile/corn-sticks-flavor.png" srcset="img/main-page/product/mobile/corn-sticks-flavor@2x.png 2x" width ="240" height="296" alt="NERO Smart Liquid вкус Кукурузные палочки.">
+                </picture>
+                <h3 class="product-card__title">Кукурузные палочки</h3>
+                <p class="product-card__description">Хрустящая текстура и <span>сочное впечатление</span></p>
+                <p class="product-card__type">20 mg | 20 mg strong</p>
+              </li>
+              <li class="swiper__item swiper-slide product-card product-card--fourth">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="img/main-page/product/tablet/fruittella-flavor-tablet.png, img/main-page/product/tablet/fruittella-flavor-tablet@2x.png 2x">
+                  <img class="product-card__image" src="img/main-page/product/mobile/fruittella-flavor.png" srcset="img/main-page/product/mobile/fruittella-flavor@2x.png 2x" width ="240" height="296" alt="NERO Smart Liquid вкус Фруттелла.">
+                </picture>
+                <h3 class="product-card__title">Фруттелла</h3>
+                <p class="product-card__description">Ароматные фрукты итальянских <span>конфет</span></p>
+                <p class="product-card__type">20 mg | 20 mg strong</p>
+              </li>
+              <li class="swiper__item swiper-slide product-card product-card--fifth">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="img/main-page/product/tablet/frustyle-flavor-tablet.png, img/main-page/product/tablet/frustyle-flavor-tablet@2x.png 2x">
+                  <img class="product-card__image" src="img/main-page/product/mobile/frustyle-flavor.png" srcset="img/main-page/product/mobile/frustyle-flavor@2x.png 2x" width ="240" height="296" alt="NERO Smart Liquid вкус Фрустайл.">
+                </picture>
+                <h3 class="product-card__title">Фрустайл</h3>
+                <p class="product-card__description">Экзотика <span>кактуса</span> и сладость <span>киви</span></p>
+                <p class="product-card__type">20 mg | 20 mg strong</p>
+              </li>
+              <li class="swiper__item swiper-slide product-card product-card--sixth">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="img/main-page/product/tablet/peach-flavor-tablet.png, img/main-page/product/tablet/peach-flavor-tablet@2x.png 2x">
+                  <img class="product-card__image" src="img/main-page/product/mobile/peach-flavor.png" srcset="img/main-page/product/mobile/peach-flavor@2x.png 2x" width ="240" height="296" alt="NERO Smart Liquid вкус Турбо сочный персик.">
+                </picture>
+                <h3 class="product-card__title">Турбо сочный персик</h3>
+                <p class="product-card__description">Вкус жвачки и сладкого <span>персика</span></p>
+                <p class="product-card__type">20 mg | 20 mg strong</p>
+              </li>
+              <li class="swiper__item swiper-slide product-card product-card--seventh">
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="img/main-page/product/tablet/garnet-flavor-tablet.png, img/main-page/product/tablet/garnet-flavor-tablet@2x.png 2x">
+                  <img class="product-card__image" src="img/main-page/product/mobile/garnet-flavor.png" srcset="img/main-page/product/mobile/garnet-flavor@2x.png 2x" width ="240" height="296" alt="NERO Smart Liquid вкус Гранат.">
+                </picture>
+                <h3 class="product-card__title">Гранат</h3>
+                <p class="product-card__description">Взрыв сочной сладости и кислинки <span>граната</span></p>
+                <p class="product-card__type">20 mg | 20 mg strong</p>
+              </li>
+            </ul>
+            <div class="swiper__controls">
+              <button class="swiper__button swiper__button--prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg width="17" height="34">
+                  <use xlink:href="img/sprite.svg#navigation"></use>
+                </svg>
+              </button>
+              <button class="swiper__button swiper__button--next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+                <svg width="17" height="34">
+                  <use xlink:href="img/sprite.svg#navigation"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="achievments">
+        <div class="page__content-container">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="achievments__list">
+            <li class="achievments__list-item achievment achievment--flavor">
+              <span class="achievment__number">7</span>
+              <p class="achievment__description">Ярких, насыщенных вкусов</p>
+            </li>
+            <li class="achievments__list-item achievment achievment--strength">
+              <span class="achievment__number">II</span>
+              <p class="achievment__description">Премиальные линейки крепости</p>
+            </li>
+            <li class="achievments__list-item achievment achievment--development">
+              <span class="achievment__number">III</span>
+              <p class="achievment__description">Нейронные стадии разработки</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <div class="page__content-container">
+          <div class="about__main-container">
+            <h2 class="about__title title">Подробнее о <span>нас</span></h2>
+            <picture>
+              <img class="about__logo logo" src="img/logo/logo.svg" width ="135" height="45" alt="NERO Smart Liquid">
+            </picture>
+            <div class="about__wrapper">
+              <p class="about__description">Наша компания представляет собой инновационного лидера в области производства жидкости для электронных сигарет. Сила нашего подхода заключается в уникальном сочетании передовых технологий и искусства создания вкусов, вдохновленных нейросетями.</p>
+              <p class="about__description">Мы используем передовые алгоритмы и аналитику для анализа предпочтений потребителя, что позволяет нам создавать восхитительные жидкости, точно соответствующие желаниям наших клиентов. Наш продукт — это не просто жидкость, а настоящий шедевр, олицетворяющий виртуозное сочетание высокотехнологичной науки.</p>
+            </div>
+            <div class="about__container">
+              <p>Подпишись</p>
+              <div class="about__social social">
+                <ul class="social__list social-list">
+                  <li class="social__list-item">
+                    <a href="" class="social__list-button">
+                      <span class="visually-hidden">Telegram</span>
+                      <svg width="48" height="48">
+                        <use xlink:href="img/sprite.svg#telegram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="" class="social__list-button">
+                      <span class="visually-hidden">Vkontakte</span>
+                      <svg width="48" height="48">
+                        <use xlink:href="img/sprite.svg#vkontakte"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list-item">
+                    <a href="" class="social__list-button">
+                      <span class="visually-hidden">Instagram</span>
+                      <svg width="48" height="48">
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews reviews--soon">
         <div class="page__content-container">
           <h2 class="reviews__title title"><span>Обзоры</span> продукции</h2>
+          <div class="reviews__soon soon">
+            <p class="soon__text">Совсем скоро...</p>
+          </div>
           <div class="reviews__container">
             <div class="reviews__wrapper review">
               <picture>
@@ -259,24 +284,32 @@
       </section>
       <section class="feedback">
         <div class="page__content-container">
-          <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="feedback__form form contact-form" method="post">
             <h2 class="visually-hidden">Форма для связи</h2>
-            <p class="form__title title">Оставьте контакты, мы <span>оперативно<span> свяжемся с вами!</p>
+            <p class="form__title title">Оставьте контакты, мы <span>оперативно</span> свяжемся с вами!</p>
             <div class="form__container">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input class="form__field" placeholder="ИМЯ" type="text" name="name" id="name" required>
-              <label class="visually-hidden" for="city">Город</label>
-              <input class="form__field" placeholder="ГОРОД" type="text" name="city" id="city" required>
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input class="form__field" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="phone" required>
-              <label class="visually-hidden" for="comment">Ваш комментарий</label>
-              <textarea class="form__field" placeholder="ВАШ КОММЕНТАРИЙ (Не обязательно)" name="comment" id="comment"></textarea>
-              <label class="form__personal-data checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" name="personal-data" required>
-                <span class="checkbox__mark"></span>
-                <span class="checkbox__label">Я даю согласие на обработку персональных данных согласно условиям политики конфиденциальности</span>
-              </label>
-              <button class="form__button button" type="submit">Отправить</button>
+              <div class="form__wrapper">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input class="form__field field field--main" placeholder="ИМЯ" type="text" name="name" id="name" required>
+                <label class="visually-hidden" for="city">Город</label>
+                <input class="form__field field field--main" placeholder="ГОРОД" type="text" name="city" id="city" required>
+                <label class="visually-hidden" for="phone">Телефон</label>
+                <input class="form__field field field--main" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="phone" required>
+              </div>
+              <div class="form__wrapper">
+                <label class="visually-hidden" for="comment">Ваш комментарий</label>
+                <textarea class="form__field field field--main" placeholder="ВАШ КОММЕНТАРИЙ" name="comment" id="comment"></textarea>
+              </div>
+              <div class="form__wrapper">
+                <label class="form__personal-data checkbox">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="personal-data" required>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__label">Я даю согласие на обработку персональных данных согласно условиям политики конфиденциальности</span>
+                </label>
+              </div>
+              <div class="form__wrapper">
+                <button class="form__button button button--main" type="submit">Отправить</button>
+              </div>
             </div>
           </form>
         </div>
@@ -286,51 +319,59 @@
       <div class="page__content-container">
         <a href="#" class="main-footer__logo logo">
           <picture>
-            <img src="img/logo/logo-footer.svg" width ="135" height="45" alt="NERO Smart Liquid">
+            <img src="img/logo/logo.svg" width ="135" height="45" alt="NERO Smart Liquid">
           </picture>
         </a>
-        <section class="main-footer__info info">
-          <p class="info__title title">Информация</p>
-          <a class="info__link" href="#">Потребителю</a>
-          <a class="info__link" href="#">Дистрибьюторам</a>
-        </section>
-        <section class="main-footer__contacts contacts">
-          <p class="contacts__title title">Контакты</p>
-          <ul class="contacts__list contacts-list">
-            <li class="contacts-list__item">+7 (000) 000-00-00</li>
-            <li class="contacts-list__item">sales@neroliquid.ru</li>
-          </ul>
-        </section>
-        <section class="main-footer__social social">
-          <p class="social__title title">Мы в соцсетях</p>
-          <ul class="social__list social-list">
-            <li class="social-list__item">
-              <a href="" class="social-list__button">
-                <span class="visually-hidden">Telegram</span>
-                <svg width="48" height="48">
-                  <use xlink:href="img/sprite.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__button">
-                <span class="visually-hidden">Vkontakte</span>
-                <svg width="48" height="48">
-                  <use xlink:href="img/sprite.svg#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__button">
-                <span class="visually-hidden">Instagram</span>
-                <svg width="48" height="48">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <p class="main-footer__rights">© 2023 Nero Smart Liquid. Все права защищены.</p>
+        <div class="main-footer__container">
+          <section class="main-footer__info info">
+            <p class="info__title title">Информация</p>
+            <a class="info__link" href="#">Потребителю</a>
+            <a class="info__link" href="#">Дистрибьюторам</a>
+          </section>
+          <section class="main-footer__contacts contacts contacts--footer">
+            <p class="contacts__title title">Контакты</p>
+            <ul class="contacts__list contacts-list">
+              <li class="contacts__list-item">+7 (963) 914-25-95</li>
+              <li class="contacts__list-item">sales@neroliquid.ru</li>
+            </ul>
+          </section>
+          <section class="main-footer__social social social--footer">
+            <p class="social__title title">Мы в соцсетях</p>
+            <ul class="social__list">
+              <li class="social__list-item">
+                <a href="" class="social__list-button">
+                  <span class="visually-hidden">Telegram</span>
+                  <svg width="48" height="48">
+                    <use xlink:href="img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__list-item">
+                <a href="" class="social__list-button">
+                  <span class="visually-hidden">Vkontakte</span>
+                  <svg width="48" height="48">
+                    <use xlink:href="img/sprite.svg#vkontakte"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__list-item">
+                <a href="" class="social__list-button">
+                  <span class="visually-hidden">Instagram</span>
+                  <svg width="48" height="48">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <a class="main-footer__button-up" href="#up">
+          <span class="visually-hidden">Вернуться наверх</span>
+          <svg width="48" height="48">
+            <use xlink:href="img/sprite.svg#button-up"></use>
+          </svg>
+        </a>
+        <p class="main-footer__rights">© 2023 Nero Smart Liquid.<br>Все права защищены.</p>
         <p class="main-footer__offer">Сайт не является публичной офертой</p>
         <a class="main-footer__policy" href="#">Политика конфиденциальности</a>
         <p class="main-footer__design">Design by Bozhenov</p>
@@ -342,25 +383,31 @@
       </div>
     </footer>
 
-    <div class="modal-container modal-container-close" style="display: none;">
-      <div class="modal">
-        <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
-        <form class="modal__form modal-form" action="https://echo.htmlacademy.ru/" method="post">
+    <div class="modal">
+      <button class="modal__close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <div class="modal__container">
+        <form class="modal__form modal-form contact-form" method="post">
           <h2 class="visually-hidden">Форма для связи</h2>
           <p class="modal-form__title title">Оставьте контакты, мы свяжемся с вами</p>
-          <label class="visually-hidden" for="name">Имя</label>
-          <input class="modal-form__field" placeholder="ИМЯ" type="text" name="name" id="modal-name" required>
-          <label class="visually-hidden" for="city">Город</label>
-          <input class="modal-form__field" placeholder="ГОРОД" type="text" name="city" id="modal-city" required>
-          <label class="visually-hidden" for="phone">Телефон</label>
-          <input class="modal-form__field" placeholder="+7 (999) 999-99-99" type="tel" name="modal-phone" id="phone" required>
-          <label class="visually-hidden" for="comment">Ваш комментарий</label>
-          <textarea class="modal-form__field" placeholder="ВАШ КОММЕНТАРИЙ (Не обязательно)" name="modal-comment" id="comment"></textarea>
-          <button class="modal-form__button button" type="submit">Отправить</button>
-          <p class="modal-form__personal-data">Нажимая «Отправить», вы подтверждаете обработку персональных данных.</p>
+          <div class="modal-form__wrapper">
+            <label class="visually-hidden" for="name">Имя</label>
+            <input class="modal-form__field field field--modal" placeholder="ИМЯ" type="text" name="name" id="modal-name" required>
+            <label class="visually-hidden" for="city">Город</label>
+            <input class="modal-form__field field field--modal" placeholder="ГОРОД" type="text" name="city" id="modal-city" required>
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input class="modal-form__field field field--modal" placeholder="+7 (999) 999-99-99" type="tel" name="phone" id="modal-phone" required>
+            <label class="visually-hidden" for="comment">Ваш комментарий</label>
+            <textarea class="modal-form__field field field--modal" placeholder="ВАШ КОММЕНТАРИЙ" name="modal-comment" id="comment"></textarea>
+            <button class="modal-form__button button button--main" type="submit">Отправить</button>
+            <p class="modal-form__personal-data">Нажимая «Отправить», вы подтверждаете обработку персональных данных.</p>
+          </div>
         </form>
       </div>
     </div>
 
+    <script src="js/script-menu-togle.js"></script>
+    <script src="js/script-swiper.js"></script>
+    <script src="js/script-modal-togle.js"></script>
+    <script src="js/script-sending-form.js"></script>
   </body>
 </html>

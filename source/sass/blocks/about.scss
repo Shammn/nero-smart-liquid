@@ -1,0 +1,193 @@
+@use "../variables.scss";
+
+.about {
+  padding-bottom: 65px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 121px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 181px;
+  }
+}
+
+.about .page__content-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 0;
+    display: block;
+    width: 76.18px;
+    height: 96.419px;
+    background: url("../../img/main-page/about/background-item-1.svg") center center no-repeat;
+    background-size: cover;
+    transform: rotate(-45.202deg);
+
+    @media (min-width: variables.$tablet-width) {
+      left: 358px;
+      top: 0;
+      width: 114.086px;
+      height: 144.396px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      left: 448px;
+      width: 114.086px;
+      height: 144.396px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    display: block;
+    width: 107.762px;
+    height: 112.199px;
+    background: url("../../img/main-page/about/background-item-2.svg") center center no-repeat;
+    background-size: cover;
+    transform: rotate(-94.86deg) scale(1, -1);
+
+    @media (min-width: variables.$tablet-width) {
+      width: 186.944px;
+      height: 194.642px;
+      bottom: 100%;
+      right: -9px;
+      transform: rotate(-72.86deg) scale(1, -1) translateX(-100%);
+
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      bottom: -46px;
+      right: 590px;
+      transform: rotate(-79.86deg) scale(1, -1);
+    }
+  }
+}
+
+.about__main-container {
+  position: relative;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-right: 492px;
+    background: url("../../img/main-page/about/background.png") right center no-repeat;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-right: 700px;
+    background: url("../../img/main-page/about/background-desktop.png") 125% center no-repeat;
+    background-size: 65%;
+  }
+}
+
+.about__title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.48px;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.64px;
+    text-align: left;
+    margin-bottom: 80px;
+  }
+}
+
+.about__logo {
+  margin: 0 auto;
+  margin-bottom: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 160px;
+    height: 52px;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.about__wrapper {
+  margin-bottom: 24px;
+
+  @media (max-width: variables.$mobile-width-only) {
+    margin: 0 auto 24px auto;
+    width: 187px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.about__description {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-align: center;
+  opacity: .8;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 19px;
+    line-height: 23px;
+    text-align: left;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about__container {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.about__container p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #FF512F 0%, #DD2476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: normal;
+    margin-bottom: 0;
+  }
+}
+
+.about__social .social-list {
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__social svg {
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}

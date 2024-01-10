@@ -1,0 +1,59 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+.product {
+  padding-bottom: 64px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 141px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-bottom: 160px;
+  }
+}
+
+.product__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: right;
+  letter-spacing: -0.48px;
+  margin-bottom: 50px;
+
+  @media (max-width: variables.$mobile-width-only) {
+    margin-right: -29px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.64px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.product__title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: block;
+  width: 215px;
+  height: 26px;
+  background: url("../../img/main-page/product/title-underline.svg") center center no-repeat;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 289px;
+    height: 35px;
+    background: url("../../img/main-page/product/title-underline-tablet.svg") center center no-repeat;
+  }
+}
+
+.product__list {
+  @include mixins.list-reset;
+}

@@ -1,0 +1,19 @@
+@use "../variables.scss";
+
+.soon {
+  padding: 100px 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+}
+
+.soon__text {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -0.64px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 41px 0;
+  background: #000000;
+  backdrop-filter: blur(6.349999904632568px);
+  margin: 0;
+}

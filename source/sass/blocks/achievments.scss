@@ -1,0 +1,34 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+.achievments {
+  padding-bottom: 64px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 121px;
+  }
+}
+
+.achievments__list {
+  @include mixins.list-reset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.achievments__list-item {
+  &:not(:last-child) {
+    margin-bottom: 52px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+}

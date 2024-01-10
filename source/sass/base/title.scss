@@ -1,0 +1,12 @@
+@use "../variables.scss";
+
+.title {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title span {
+  background: linear-gradient(180deg, #FF512F 0%, #DD2476 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

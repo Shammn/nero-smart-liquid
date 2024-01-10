@@ -2,6 +2,7 @@
 
 .page {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .page__body {
@@ -23,17 +24,18 @@
 }
 
 .page__content-container {
-  width: 320px;
-  padding: 0 20px;
+  position: relative;
+  width: 362px;
+  padding: 0 30px;
   margin: 0 auto;
 
   @media (min-width: variables.$tablet-width) {
-    width: 768px;
+    width: 1024px;
     padding: 0 30px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 1440px;
+    width: 1400px;
     padding: 0 110px;
   }
 }

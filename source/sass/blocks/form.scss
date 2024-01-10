@@ -1,0 +1,83 @@
+@use "../variables.scss";
+
+.form {
+  padding: 30px 17px;
+  border: 3px solid #FF512F;
+  background: linear-gradient(269deg, rgba(255, 255, 255, 0.02) 111.35%, rgba(0, 0, 0, 0.02) 117.53%);
+  box-shadow: 0px 4px 10px 0px rgba(255, 255, 255, 0.10) inset, 0px 13px 11px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(97px);
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 30px 18px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 30px 220px;
+  }
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.48px;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
+  }
+}
+
+.form__container {
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 68px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 40px 76px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+textarea.form__field {
+  min-height: 96px;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    min-height: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.form__personal-data {
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__button {
+  background-color: transparent;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 20px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 422px;
+  }
+}
