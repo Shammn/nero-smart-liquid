@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
   speed: 1000,
   slideActiveClass: 'swiper__item--current',
   breakpoints: {
-    320: {
+    376: {
       slidesPerView: 1,
       spaceBetween: 38,
     },
@@ -12,11 +12,6 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 3,
       slidesPerGroup: 1,
       spaceBetween: 22,
-    },
-    1440: {
-      slidesPerView: 3,
-      lidesPerGroup: 1,
-      spaceBetween: 93,
     },
   },
   navigation: {

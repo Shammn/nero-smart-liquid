@@ -14,7 +14,7 @@
 .info__title {
   letter-spacing: -0.32px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 21px;
 }
 
 .info__link {
@@ -22,8 +22,10 @@
   color: #FEFEFE;
   letter-spacing: 0.16px;
   text-decoration: none;
+  opacity: .2;
+  cursor: default;
 
   &:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 }

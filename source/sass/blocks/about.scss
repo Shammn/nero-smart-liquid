@@ -75,13 +75,35 @@
 
   @media (min-width: variables.$tablet-width) {
     padding-right: 492px;
-    background: url("../../img/main-page/about/background.png") right center no-repeat;
+    // background: url("../../img/main-page/about/background.png") 106% center no-repeat;
   }
 
   @media (min-width: variables.$desktop-width) {
     padding-right: 700px;
-    background: url("../../img/main-page/about/background-desktop.png") 125% center no-repeat;
-    background-size: 65%;
+    // background: url("../../img/main-page/about/background-desktop.png") 176% 62% no-repeat;
+    // background-size: 76%;
+  }
+
+  &::before {
+    display: block;
+
+    @media (min-width: variables.$tablet-width) {
+      content: "";
+      position: absolute;
+      top: 63px;
+      right: -41px;
+      width: 560px;
+      height: 522px;
+      background: url("../../img/main-page/about/background.png") center center no-repeat;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      top: -115px;
+      right: -172px;
+      width: 808px;
+      height: 794px;
+      background: url("../../img/main-page/about/background-desktop.png") center center no-repeat;
+    }
   }
 }
 
@@ -90,24 +112,26 @@
   line-height: 32px;
   letter-spacing: -0.48px;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 32px;
     line-height: 38px;
     letter-spacing: -0.64px;
     text-align: left;
-    margin-bottom: 80px;
+    margin-bottom: 66px;
   }
 }
 
 .about__logo {
   margin: 0 auto;
   margin-bottom: 12px;
+  transform: scale(1.1);
+  margin-left: 91px;
 
   @media (min-width: variables.$tablet-width) {
-    width: 160px;
-    height: 52px;
+    width: 170px;
+    height: 60px;
     margin-left: 0;
     margin-bottom: 40px;
   }

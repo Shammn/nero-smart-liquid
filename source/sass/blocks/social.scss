@@ -20,15 +20,6 @@
   }
 }
 
-.social--footer .social__title {
-  display: block;
-
-  @media (min-width: variables.$tablet-width) {
-    text-align: left;
-    letter-spacing: -0.32px;
-  }
-}
-
 .social__list {
   @include mixins.list-reset;
   display: flex;
@@ -39,8 +30,38 @@
   }
 }
 
+.social__list-item:last-child a {
+  opacity: .2;
+  cursor: default;
+}
+
+.social--footer {
+  @media (min-width: variables.$tablet-width) {
+    width: 130px;
+  }
+}
+
+.social--footer .social__title {
+  display: block;
+
+  @media (min-width: variables.$tablet-width) {
+    text-align: left;
+    letter-spacing: -0.32px;
+    margin-bottom: 20px;
+  }
+}
+
 .social--footer .social__list {
   justify-content: center;
+
+  @media (max-width: variables.$tablet-width) {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+
+.social--header .social__list {
+  gap: 10px;
 }
 
 .social__list-button {

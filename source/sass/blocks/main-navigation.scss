@@ -27,6 +27,15 @@
       margin-bottom: 0;
       margin-right: 30px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-right: 40px;
+    }
+  }
+
+  &:last-child a {
+    opacity: .2;
+    cursor: default;
   }
 }
 

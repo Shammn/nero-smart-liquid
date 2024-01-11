@@ -9,13 +9,15 @@
   @media (min-width: variables.$tablet-width) {
     padding-top: 162px;
     padding-bottom: 121px;
-    background: url("../../img/age-verification/background.jpg") -196px 3px no-repeat, radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0.00) 0%, #010101 100%) center center no-repeat;
+    background: url("../../img/age-verification/background.jpg") -213px 0px no-repeat, radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0.00) 0%, #010101 100%) center center no-repeat;
     background-size: cover;
   }
 
   @media (min-width: variables.$desktop-width) {
+    padding-top: 188px;
     background: url("../../img/age-verification/background.jpg") 100% -33px no-repeat, radial-gradient(100% 100% at 50% 0%, rgba(0, 0, 0, 0.00) 0%, #010101 100%) center center no-repeat;
     background-size: contain;
+    padding-bottom: 170px;
   }
 }
 
@@ -24,8 +26,9 @@
     width: 492px;
   }
 
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     width: 596px;
+    margin-left: 14px;
   }
 }
 
@@ -58,17 +61,18 @@
 
   @media (min-width: variables.$tablet-width) {
     position: absolute;
-    top: 0;
-    right: 30px;
-    width: 435px;
-    height: 413px;
+    top: -8px;
+    right: 13px;
+    width: 482px;
+    height: 482px;
     margin-bottom: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
-    right: 110px;
-    width: 462px;
-    height: 482px;
+    top: -61px;
+    right: 87px;
+    width: 505px;
+    height: 552px;
   }
 }
 
@@ -86,6 +90,10 @@
     line-height: 24px;
     text-align: left;
     margin-bottom: 80px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    letter-spacing: normal;
   }
 }
 

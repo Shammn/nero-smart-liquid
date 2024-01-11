@@ -27,6 +27,12 @@
   margin-bottom: 10px;
 }
 
+.contacts--footer .contacts__title {
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 21px;
+  }
+}
+
 .contacts__list {
   @include mixins.list-reset;
 }
@@ -35,5 +41,13 @@
 
   &:not(:last-child) {
     margin-bottom: 5px;
+  }
+}
+
+.contacts--footer .contacts__list-item {
+  &:not(:last-child) {
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 12px;
+    }
   }
 }
