@@ -9,10 +9,10 @@
     top: 50%;
     left: 50%;
     display: block;
-    width: 1000px;
-    height: 1000px;
+    width: 670px;
+    height: 670px;
     transform: translate(-50%, -50%);
-    filter: blur(114px);
+    background-position: center center;
     z-index: -1;
     transition: background-image 0.3s;
 
@@ -35,7 +35,7 @@
   }
 
   &:has(.swiper__item--current.product-card--first)::before{
-    background: variables.$shadow-png-first;
+    background: variables.$shadow-png-first center center no-repeat;
 
     @media (min-width: variables.$tablet-width) {
       background: variables.$shadow-first;
@@ -43,7 +43,7 @@
   }
 
   &:has(.swiper__item--current.product-card--second)::before{
-    background: variables.$shadow-png-second;
+    background: variables.$shadow-png-second center center no-repeat;
 
     @media (min-width: variables.$tablet-width) {
       background: variables.$shadow-second;
@@ -51,7 +51,7 @@
   }
 
   &:has(.swiper__item--current.product-card--third)::before{
-    background: variables.$shadow-png-third;
+    background: variables.$shadow-png-third center center no-repeat;
 
     @media (min-width: variables.$tablet-width) {
       background: variables.$shadow-third;
@@ -59,7 +59,7 @@
   }
 
   &:has(.swiper__item--current.product-card--fourth)::before{
-    background: variables.$shadow-png-fourth;
+    background: variables.$shadow-png-fourth center center no-repeat;
 
     @media (min-width: variables.$tablet-width) {
       background: variables.$shadow-fourth;
@@ -67,7 +67,7 @@
   }
 
   &:has(.swiper__item--current.product-card--fifth)::before{
-    background: variables.$shadow-png-fifth;
+    background: variables.$shadow-png-fifth center center no-repeat;
 
     @media (min-width: variables.$tablet-width) {
       background: variables.$shadow-fifth;
@@ -75,7 +75,7 @@
   }
 
   &:has(.swiper__item--current.product-card--sixth)::before{
-    background: variables.$shadow-png-sixth;
+    background: variables.$shadow-png-sixth center center no-repeat;
 
     @media (min-width: variables.$tablet-width) {
       background: variables.$shadow-sixth;
@@ -83,7 +83,7 @@
   }
 
   &:has(.swiper__item--current.product-card--seventh)::before{
-    background: variables.$shadow-png-seventh;
+    background: variables.$shadow-png-seventh center center no-repeat;
 
     @media (min-width: variables.$tablet-width) {
       background: variables.$shadow-seventh;

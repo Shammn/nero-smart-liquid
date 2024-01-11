@@ -4,6 +4,7 @@
 .product {
   padding-bottom: 64px;
   z-index: 0;
+  overflow-x: hidden;
 
   @media (min-width: variables.$tablet-width) {
     padding-bottom: 121px;
