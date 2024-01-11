@@ -1,0 +1,68 @@
+@use "../variables.scss";
+
+.error__wrapper {
+  background: url("../../img/main-page/modal-background.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 302px;
+  max-width: 471px;
+  height: 100vh;
+  margin: auto;
+}
+
+.error__title {
+  font-size: 140px;
+  line-height: 100px;
+  letter-spacing: -5.12px;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 256px;
+    line-height: 190px;
+  }
+}
+
+.error_title-reverse {
+  display: inline-block;
+  transform: scale(-1, 1);
+}
+
+.error__subtitle {
+  font-size: 30px;
+  line-height: 36px;
+  color: #F7F7F7;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+.error__description {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.70);
+  letter-spacing: -0.28px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 103px;
+  }
+}
+
+.error__button {
+  width: calc(100% - 50px);
+}
