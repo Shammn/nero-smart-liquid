@@ -3,6 +3,7 @@
 
 .product {
   padding-bottom: 64px;
+  z-index: 0;
 
   @media (min-width: variables.$tablet-width) {
     padding-bottom: 121px;

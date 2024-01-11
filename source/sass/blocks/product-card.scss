@@ -48,19 +48,17 @@
 .product-card img {
   margin: 0 auto;
   width: 100%;
-  margin-left: -18px;
   transition: .3s;
 
   @media (min-width: variables.$tablet-width) {
-    width: 306px;
-    height: 406px;
-    margin-left: -14px;
+    width: 259px;
+    height: 407px;
     transform: translateY(-20px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 305px;
-    height: 412px;
+    width: 267px;
+    height: 427px;
     margin: 0 auto;
     transform: translateY(-72px);
   }
