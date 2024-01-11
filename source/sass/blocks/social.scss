@@ -54,7 +54,7 @@
 .social--footer .social__list {
   justify-content: center;
 
-  @media (max-width: variables.$tablet-width) {
+  @media (min-width: variables.$tablet-width) {
     justify-content: flex-start;
     gap: 10px;
   }

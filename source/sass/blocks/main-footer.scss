@@ -179,7 +179,13 @@
   @media (min-width: variables.$tablet-width) {
     padding-left: 184px;
   }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
+
+
 
 .main-footer__design {
   grid-column: 1 / 2;
